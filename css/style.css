@@ -14,6 +14,7 @@ header {
   letter-spacing: 0;
   color: #1F91BE;
   background: #fff;
+  overflow: hidden;
 }
 
 .inner {
@@ -232,4 +233,30 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 12px;
+}
+
+@media  screen and (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 82px;
+  }
+  header .inner {
+    padding: 20px 15px;
+    display:  block;
+  }
+  header .inner .logo {
+    font-size: 18px;
+    line-height: 1.0;
+    margin-bottom: 10px;
+  }
+
+  .header .inner .gnav {
+    padding: 0;
+  }
+
+  header .inner .gnav >li {
+    font-size: 14px;
+    margin-right: 15px;
+    line-height: 1.6;
+  }
 }
